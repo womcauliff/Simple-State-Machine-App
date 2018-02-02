@@ -7,6 +7,7 @@ import {
   Row,
 } from 'reactstrap';
 import './App.css';
+import StateMachineTable from './components/StateMachineTable';
 
 // finite state machine, and accepted inputs
 import { fsm, fsmInputs } from './finitestatemachine';
@@ -84,6 +85,19 @@ class App extends Component {
                 </Button>
               ))}
             </ButtonGroup>
+          </Col>
+        </Row>
+        <hr />
+        <Row>
+          <Col xs="12">
+            <h2>Table Representation</h2>
+            <p>
+              This application implements the state machine
+              and transitions represented by this table:
+            </p>
+          </Col>
+          <Col xs="12">
+            <StateMachineTable />
           </Col>
         </Row>
       </Container>
