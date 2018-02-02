@@ -12,18 +12,25 @@ This application implements the state machine and transitions represented by thi
 | **Old State: 2** 	| 3 	| 1 	| 0 	|
 | **Old State: 3** 	| 0 	| 2 	| 0 	|
 
-Instructions for the application are as follows:
+User instructions to interact with the application are as follows:
 ```
-Enter a value (0, 1, or 2) to transition to the next state, and display the current state of the object.  Enter -1 to exit the state machine.
+Enter a value (0, 1, or 2) to transition to the next state.
+Enter -1 to exit the state machine.
 ```
 
 The application accepts input for the state machine from both button and keyboard events. 
 
 ----
 
-## Installation
+## Live Deployment
 
+This application is live at [https://womcauliff.github.io/Simple-State-Machine-App/](https://womcauliff.github.io/Simple-State-Machine-App/).
+
+## Run Locally
+
+To run this application on your local machine, run the following commands after cloning this repository:
 ```
+cd Simple-State-Machine-App/
 npm install
 npm start
 ```
