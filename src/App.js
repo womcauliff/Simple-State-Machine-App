@@ -58,19 +58,20 @@ class App extends Component {
         </Row>
         <Row>
           <Col>
-            <p>To change state,
-            type one of the following inputs:
-            </p>
-            <code>
-              esc, 0, 1, 2
-            </code>
             <p>
-            Alternatively, click on the corresponding buttons:
+            To transition to the next state,
+            type one of the following inputs: <code>0, 1, 2</code>
+            </p>
+            <p>
+            Enter <code>esc</code> to exit the state machine
             </p>
           </Col>
         </Row>
-        <Row onKeyPress={this.keyHandler}>
+        <Row>
           <Col>
+            <p>
+            Alternatively, click on the corresponding buttons:
+            </p>
             <ButtonGroup size="lg">
               {fsmInputs.map(number => (
                 <Button
